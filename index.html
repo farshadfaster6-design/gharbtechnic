@@ -4,63 +4,262 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
 <title>جلوبندی‌سازی تهرانسر | غرب تکنیک</title>
-<meta name="description" content="جلوبندی‌سازی تهرانسر در کارگاه غرب تکنیک داخل کارواش یاس. تعمیر جلوبندی، تنظیم زاویه روی جک بالابر قیچی، پرس سیبک."/>
-<meta name="theme-color" content="#05070c"/>
-<meta name="robots" content="index,follow"/>
+<meta name="description" content="کارگاه غرب تکنیک داخل کارواش یاس، تهرانسر. تعمیر جلوبندی و عقب‌بندی، تنظیم زاویه روی جک بالابر قیچی، پرس سیبک. رضا و فرشاد."/>
+<meta name="theme-color" content="#04060b"/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://farshadfaster6-design.github.io/gharbtechnic/"/>
 <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<meta property="og:title" content="جلوبندی‌سازی تهرانسر | غرب تکنیک"/>
+<meta property="og:description" content="تعمیر جلوبندی روی جک بالابر قیچی. کارواش یاس، تهرانسر."/>
+<meta property="og:url" content="https://farshadfaster6-design.github.io/gharbtechnic/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="fa_IR"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 :root{
-  --void:#05070c;--navy:#0b1220;--panel:#101826;--bone:#e8eef6;
-  --muted:#8b9bb0;--cyan:#2ee6ff;--brass:#c9a36a;--line:#1c2838;
+  --void:#04060b;--deep:#080d18;--panel:#0d1524;--panel2:#121c2e;
+  --bone:#e9eef6;--muted:#8a9bb0;--faint:#5a6b80;
+  --cyan:#2ee6ff;--cyan-dim:rgba(46,230,255,.12);--cyan-line:rgba(46,230,255,.28);
+  --brass:#c9a36a;--brass-dim:rgba(201,163,106,.14);
+  --line:rgba(148,163,184,.12);--glow:0 0 40px rgba(46,230,255,.15);
+  --r:1.2rem;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Vazirmatn",Tahoma,sans-serif;background:var(--void);color:var(--bone);line-height:1.75;overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Vazirmatn",Tahoma,sans-serif;
+  background:var(--void);color:var(--bone);
+  line-height:1.75;overflow-x:hidden;
+  min-height:100dvh;
+}
 a{color:inherit;text-decoration:none}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
 img{max-width:100%;display:block}
-.wrap{width:min(42rem,calc(100% - 1.5rem));margin-inline:auto}
-.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.9rem 0;backdrop-filter:blur(14px);background:color-mix(in oklab,var(--void) 78%,transparent);border-bottom:1px solid var(--line)}
-.brand{font-weight:800;letter-spacing:-.02em}
-.cta,.ghost{display:inline-flex;align-items:center;justify-content:center;min-height:2.85rem;padding:.7rem 1.15rem;border-radius:999px;font-weight:700;border:1px solid transparent;font-size:.95rem}
-.cta{background:var(--cyan);color:var(--void)}
-.ghost{border-color:var(--line);color:var(--bone);background:color-mix(in oklab,var(--navy) 80%,transparent)}
-.hero{padding:2rem 0 1.2rem}
-.kicker{color:var(--cyan);font-size:.78rem;font-weight:700;letter-spacing:.12em;margin-bottom:.75rem}
-.display{font-size:clamp(2.2rem,9vw,3.4rem);font-weight:800;line-height:1.08;letter-spacing:-.03em}
-.display em{font-style:normal;color:var(--cyan)}
-.lede{color:var(--muted);margin:1rem 0 1.35rem;font-size:1.02rem}
-.actions{display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.2rem}
-.chips{display:flex;flex-wrap:wrap;gap:.45rem}
-.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:.35rem .75rem;color:var(--muted);font-size:.8rem}
-.section{padding:2.4rem 0;border-top:1px solid var(--line)}
-.section h2{font-size:1.45rem;margin-bottom:.85rem;letter-spacing:-.02em}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:1.1rem;padding:1.05rem 1.1rem;margin:.65rem 0}
-.card h3{font-size:1.02rem;margin-bottom:.3rem}
-.card p{color:var(--muted);font-size:.95rem}
-.phone{display:flex;flex-direction:column;gap:.35rem;padding:1rem 1.1rem;border-radius:1.1rem;border:1px solid var(--line);background:var(--panel);margin:.65rem 0}
-.phone strong{font-size:1.05rem}
-.phone span{color:var(--muted);font-size:.85rem}
-.phone a{color:var(--cyan);font-weight:800;font-size:1.2rem;direction:ltr;unicode-bidi:isolate;text-align:right;letter-spacing:.03em}
-.note{color:var(--muted);font-size:.95rem;margin:.4rem 0 1rem}
-.foot{padding:1.4rem 0 2.4rem;color:#5c6d82;font-size:.82rem;text-align:center;border-top:1px solid var(--line)}
+::selection{background:var(--cyan);color:var(--void)}
+
+.sky{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.sky canvas{width:100%;height:100%;display:block}
+.orbit{
+  position:fixed;inset:-15vh;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 50% 35% at 85% 12%, rgba(46,230,255,.14), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 8% 88%, rgba(201,163,106,.1), transparent 72%);
+}
+.orbit::before,.orbit::after{
+  content:"";position:absolute;border-radius:50%;left:50%;top:22%;
+  transform:translate(-50%,-50%);border:1px solid var(--cyan-line);
+}
+.orbit::before{
+  width:min(110vw,36rem);height:min(110vw,36rem);
+  border-style:dashed;animation:spin 90s linear infinite;
+}
+.orbit::after{
+  width:min(70vw,22rem);height:min(70vw,22rem);
+  border-color:rgba(201,163,106,.25);animation:spin 55s linear infinite reverse;
+}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .orbit::before,.orbit::after{animation:none}
+  html{scroll-behavior:auto}
+}
+
+.shell{position:relative;z-index:1}
+.wrap{width:min(28rem,calc(100% - 1.35rem));margin-inline:auto}
+
+.nav{
+  position:sticky;top:0;z-index:30;
+  display:flex;align-items:center;justify-content:space-between;gap:.75rem;
+  padding:.85rem 0;
+  backdrop-filter:blur(18px) saturate(1.2);
+  background:rgba(4,6,11,.72);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:.65rem;font-weight:800;letter-spacing:-.02em;font-size:1.02rem}
+.mark{
+  width:2.15rem;height:2.15rem;border-radius:.65rem;
+  display:grid;place-items:center;
+  background:var(--deep);border:1px solid var(--cyan-line);
+  color:var(--cyan);box-shadow:var(--glow);
+}
+.mark svg{width:1.1rem;height:1.1rem}
+
+.btn,.btn-ghost{
+  display:inline-flex;align-items:center;justify-content:center;gap:.45rem;
+  min-height:3rem;padding:.75rem 1.2rem;border-radius:999px;
+  font-weight:700;font-size:.95rem;transition:filter .15s,border-color .15s,transform .15s;
+}
+.btn{background:var(--cyan);color:var(--void);box-shadow:0 0 24px rgba(46,230,255,.25)}
+.btn:active{transform:scale(.98)}
+.btn-ghost{
+  background:rgba(13,21,36,.75);color:var(--bone);
+  border:1px solid var(--line);
+}
+.btn-ghost:active{border-color:var(--cyan-line)}
+
+.hero{padding:1.75rem 0 1.25rem}
+.kicker{
+  display:inline-flex;align-items:center;gap:.5rem;
+  color:var(--cyan);font-size:.72rem;font-weight:700;letter-spacing:.14em;
+  margin-bottom:.85rem;
+}
+.kicker i{width:1.35rem;height:1px;background:var(--cyan);display:block}
+.display{
+  font-size:clamp(2.35rem,11vw,3.35rem);font-weight:800;
+  line-height:1.06;letter-spacing:-.035em;margin:0;
+}
+.display span{color:var(--cyan);display:block}
+.lede{color:var(--muted);margin:1rem 0 1.35rem;font-size:1.02rem;max-width:22rem}
+
+.partners{
+  display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-bottom:1rem;
+}
+.partner{
+  position:relative;overflow:hidden;
+  background:linear-gradient(165deg,var(--panel2),var(--panel));
+  border:1px solid var(--line);border-radius:1.15rem;
+  padding:1rem .9rem 1.05rem;
+  display:flex;flex-direction:column;gap:.2rem;
+  min-height:7.2rem;
+}
+.partner::before{
+  content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;
+  background:linear-gradient(90deg,transparent,var(--cyan),transparent);
+  opacity:.7;
+}
+.partner.b::before{background:linear-gradient(90deg,transparent,var(--brass),transparent)}
+.partner .role{font-size:.72rem;color:var(--faint);font-weight:600;letter-spacing:.06em}
+.partner .name{font-size:1.12rem;font-weight:800;letter-spacing:-.02em}
+.partner .tel{
+  margin-top:auto;padding-top:.55rem;
+  font-size:1.05rem;font-weight:800;color:var(--cyan);
+  font-variant-numeric:tabular-nums;
+  direction:ltr;unicode-bidi:isolate;text-align:start;
+  letter-spacing:.04em;
+}
+.partner.b .tel{color:var(--brass)}
+.partner:active{filter:brightness(1.08)}
+
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.15rem}
+.chip{
+  border:1px solid var(--line);background:rgba(13,21,36,.85);
+  border-radius:999px;padding:.32rem .7rem;color:var(--muted);font-size:.78rem;
+}
+
+.section{padding:2.15rem 0;border-top:1px solid var(--line)}
+.section h2{
+  font-size:1.35rem;font-weight:800;letter-spacing:-.02em;
+  margin:.15rem 0 .85rem;line-height:1.25;
+}
+.section .sub{color:var(--muted);font-size:.95rem;margin-bottom:1rem}
+
+.card{
+  background:rgba(13,21,36,.9);border:1px solid var(--line);
+  border-radius:var(--r);padding:1rem 1.05rem;margin:.55rem 0;
+  position:relative;
+}
+.card .num{
+  font-size:.72rem;font-weight:700;color:var(--brass);
+  letter-spacing:.12em;margin-bottom:.25rem;
+}
+.card h3{font-size:1.02rem;font-weight:700;margin-bottom:.25rem}
+.card p{color:var(--muted);font-size:.93rem}
+
+.feature{
+  display:grid;gap:.85rem;padding:1.1rem;
+  border-radius:1.25rem;border:1px solid var(--cyan-line);
+  background:
+    linear-gradient(160deg,rgba(46,230,255,.08),transparent 55%),
+    var(--panel);
+  margin-top:.5rem;
+}
+.feature h3{font-size:1.05rem;font-weight:800}
+.feature p{color:var(--muted);font-size:.95rem}
+
+.steps{display:grid;gap:.55rem}
+.step{
+  display:grid;grid-template-columns:2.4rem 1fr;gap:.75rem;align-items:start;
+  padding:.85rem .9rem;border-radius:1rem;
+  background:var(--deep);border:1px solid var(--line);
+}
+.badge{
+  width:2.4rem;height:2.4rem;border-radius:50%;
+  display:grid;place-items:center;font-weight:800;font-size:.85rem;
+  background:var(--brass);color:var(--void);
+}
+.step h3{font-size:.98rem;font-weight:700}
+.step p{color:var(--muted);font-size:.9rem}
+
+.faq details{
+  border-bottom:1px solid var(--line);padding:.95rem 0;
+}
+.faq summary{
+  cursor:pointer;font-weight:700;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:.75rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";color:var(--cyan);font-weight:800;font-size:1.15rem;
+}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--muted);margin-top:.45rem;font-size:.95rem}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}
+.wa-row{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:.75rem}
+
+.addr{
+  margin-top:1rem;padding:1rem;border-radius:var(--r);
+  border:1px solid var(--line);background:var(--panel);
+  color:var(--muted);font-size:.95rem;
+}
+.addr strong{color:var(--bone);display:block;margin-bottom:.2rem}
+
+.foot{
+  padding:1.5rem 0 2.6rem;text-align:center;
+  color:var(--faint);font-size:.8rem;border-top:1px solid var(--line);
+}
+
+@media (min-width:480px){
+  .wrap{width:min(32rem,calc(100% - 2rem))}
+  .display{font-size:clamp(2.6rem,8vw,3.6rem)}
+}
 </style>
 </head>
 <body>
+<div class="sky" aria-hidden="true"><canvas id="stars"></canvas></div>
+<div class="orbit" aria-hidden="true"></div>
+
+<div class="shell">
 <header class="wrap nav">
-  <div class="brand">غرب تکنیک</div>
-  <a class="cta" href="tel:09123990558">نوبت</a>
+  <a class="brand" href="#top">
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M6 18 L18 6"/><path d="M6 6 L18 18" stroke="#c9a36a"/></svg>
+    </span>
+    غرب تکنیک
+  </a>
+  <a class="btn" href="#contact" style="min-height:2.55rem;padding:.55rem 1rem;font-size:.88rem">تماس</a>
 </header>
-<main class="wrap">
-  <section class="hero">
-    <p class="kicker">داخل کارواش یاس · تهرانسر</p>
-    <h1 class="display">جلوبندی‌سازی<br><em>تهرانسر</em></h1>
-    <p class="lede">تعمیر جلوبندی و عقب‌بندی با کار تمیز و هزینه منطقی. خودرو روی جک بالابر قیچی بالا می‌رود تا دید کافی باشد و تعمیر بهتر انجام شود.</p>
-    <div class="actions">
-      <a class="cta" href="tel:09123990558">رضا · ۰۹۱۲ ۳۹۹ ۰۵۵۸</a>
-      <a class="ghost" href="tel:09372418063">فرشاد · ۰۹۳۷ ۲۴۱ ۸۰۶۳</a>
+
+<main id="top">
+  <section class="wrap hero">
+    <p class="kicker"><i></i> داخل کارواش یاس · تهرانسر</p>
+    <h1 class="display">جلوبندی‌سازی<span>با دقت مداری</span></h1>
+    <p class="lede">تعمیر جلوبندی و عقب‌بندی با کار تمیز. خودرو روی جک بالابر قیچی بالا می‌رود تا دید کافی باشد و تعمیر بهتر انجام شود.</p>
+
+    <div class="partners" aria-label="شرکا">
+      <a class="partner" href="tel:+989123990558">
+        <span class="role">شریک</span>
+        <span class="name">رضا</span>
+        <span class="tel">0912&nbsp;399&nbsp;0558</span>
+      </a>
+      <a class="partner b" href="tel:+989372418063">
+        <span class="role">شریک</span>
+        <span class="name">فرشاد</span>
+        <span class="tel">0937&nbsp;241&nbsp;8063</span>
+      </a>
     </div>
+
     <div class="chips">
       <span class="chip">جک بالابر قیچی</span>
       <span class="chip">پرس سیبک</span>
@@ -69,35 +268,134 @@ img{max-width:100%;display:block}
     </div>
   </section>
 
-  <section class="section" id="services">
-    <h2>خدمات کارگاه</h2>
-    <article class="card"><h3>تعمیر کامل جلوبندی و عقب‌بندی</h3><p>تعمیر تخصصی خودروهای ایرانی و خارجی با قطعه مرغوب و گارانتی کار.</p></article>
-    <article class="card"><h3>سرویس پولوس</h3><p>تعویض گردگیر، گریس‌کاری اصولی و رفع صدا و لرزش.</p></article>
-    <article class="card"><h3>تعمیر جعبه فرمان</h3><p>رفع سفتی، خلاصی و صدای فرمان برای رانندگی نرم و دقیق.</p></article>
-    <article class="card"><h3>پرس و احیای سیبک</h3><p>اگر سیبک قابل احیا باشد با پرس مثل نو برمی‌گردد؛ هزینه کمتر از تعویض.</p></article>
-    <article class="card"><h3>تنظیم زوایای چهار چرخ</h3><p>خودرو روی جک بالابر قیچی بالا می‌رود برای دید کافی و تعمیر بهتر؛ رفع کشیدن فرمان و سایش لاستیک.</p></article>
-    <article class="card"><h3>جوشکاری و تراشکاری</h3><p>جوش و تراش جلوبندی همان‌جا در کارگاه؛ بدون مراجعه جداگانه.</p></article>
+  <section class="wrap section" id="services">
+    <p class="kicker"><i></i> خدمات</p>
+    <h2>همان‌جا که ماشین بالا می‌رود، کار تمام می‌شود</h2>
+    <p class="sub">شش کار اصلی کارگاه — بدون شعار اضافه.</p>
+
+    <article class="card"><div class="num">۰۱</div><h3>جلوبندی و عقب‌بندی</h3><p>عیب‌یابی و تعمیر تخصصی خودروهای ایرانی و خارجی، با قطعه مرغوب و گارانتی کار.</p></article>
+    <article class="card"><div class="num">۰۲</div><h3>سرویس پولوس</h3><p>تعویض گردگیر، گریس‌کاری اصولی و رفع صدا و لرزش.</p></article>
+    <article class="card"><div class="num">۰۳</div><h3>جعبه فرمان</h3><p>رفع سفتی، خلاصی و صدا برای فرمان نرم و دقیق.</p></article>
+    <article class="card"><div class="num">۰۴</div><h3>پرس و احیای سیبک</h3><p>اگر سیبک قابل احیا باشد با پرس مثل نو برمی‌گردد؛ هزینه کمتر از تعویض.</p></article>
+    <article class="card"><div class="num">۰۵</div><h3>زوایای چهار چرخ</h3><p>خودرو روی جک بالابر قیچی بالا می‌رود برای دید کافی و تعمیر بهتر؛ رفع کشیدن فرمان و سایش لاستیک.</p></article>
+    <article class="card"><div class="num">۰۶</div><h3>جوش و تراش</h3><p>جوشکاری و تراشکاری جلوبندی همان‌جا، بدون مراجعه جدا.</p></article>
   </section>
 
-  <section class="section" id="contact">
-    <h2>تماس و نوبت</h2>
-    <p class="note">تهران، تهرانسر، بلوار یاس — داخل کارواش یاس</p>
-    <div class="phone">
-      <strong>رضا</strong>
-      <span>هماهنگی نوبت</span>
-      <a href="tel:09123990558">0912 399 0558</a>
+  <section class="wrap section" id="lift">
+    <p class="kicker"><i></i> تجهیز</p>
+    <h2>جک بالابر قیچی</h2>
+    <div class="feature">
+      <h3>دید کامل، کار دقیق‌تر</h3>
+      <p>خودرو روی جک بالابر قیچی بالا می‌رود تا دید کافی باشد و تعمیر بهتر انجام شود. جک قدیمی سوسماری نداریم؛ کار روی همین جک قیچی انجام می‌شود.</p>
     </div>
-    <div class="phone">
-      <strong>فرشاد</strong>
-      <span>مشاوره کار</span>
-      <a href="tel:09372418063">0937 241 8063</a>
+  </section>
+
+  <section class="wrap section" id="process">
+    <p class="kicker"><i></i> مسیر</p>
+    <h2>از تماس تا تحویل</h2>
+    <div class="steps">
+      <div class="step"><span class="badge">۱</span><div><h3>تماس</h3><p>به رضا یا فرشاد زنگ بزنید؛ نوبت هماهنگ می‌شود.</p></div></div>
+      <div class="step"><span class="badge">۲</span><div><h3>عیب‌یابی</h3><p>ماشین روی جک می‌رود. صدا، لقی و زاویه سنجیده می‌شود.</p></div></div>
+      <div class="step"><span class="badge">۳</span><div><h3>تعمیر یا احیا</h3><p>قطعه تعمیر، پرس یا در صورت لزوم تعویض می‌شود.</p></div></div>
+      <div class="step"><span class="badge">۴</span><div><h3>تحویل</h3><p>زاویه تنظیم و کار انجام‌شده توضیح داده می‌شود.</p></div></div>
     </div>
-    <div class="actions" style="margin-top:1rem">
-      <a class="cta" href="https://wa.me/989123990558">واتساپ رضا</a>
-      <a class="ghost" href="https://wa.me/989372418063">واتساپ فرشاد</a>
+  </section>
+
+  <section class="wrap section" id="faq">
+    <p class="kicker"><i></i> قبل از آمدن</p>
+    <h2>پرسش‌های پرتکرار</h2>
+    <div class="faq">
+      <details open>
+        <summary>خودروی ایرانی و خارجی هر دو؟</summary>
+        <p>بله. جلوبندی و عقب‌بندی هر دو در همین کارگاه انجام می‌شود.</p>
+      </details>
+      <details>
+        <summary>سیبک را عوض می‌کنید یا پرس؟</summary>
+        <p>اگر قابل احیا باشد با پرس برمی‌گردد و هزینه کمتر است. اگر نباشد، تعویض می‌شود.</p>
+      </details>
+      <details>
+        <summary>تنظیم فرمان هم دارید؟</summary>
+        <p>بله. زوایای چهار چرخ روی جک بالابر قیچی تنظیم می‌شود.</p>
+      </details>
+      <details>
+        <summary>آدرس دقیق؟</summary>
+        <p>تهران، تهرانسر، بلوار یاس، داخل کارواش یاس.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="wrap section" id="contact">
+    <p class="kicker"><i></i> تماس</p>
+    <h2>رضا و فرشاد — شرکا</h2>
+    <p class="sub">هر دو به یک اندازه پاسخگو هستند. هر کدام راحت‌تر بود تماس بگیرید.</p>
+
+    <div class="contact-grid">
+      <a class="partner" href="tel:+989123990558">
+        <span class="role">شریک</span>
+        <span class="name">رضا</span>
+        <span class="tel">0912&nbsp;399&nbsp;0558</span>
+      </a>
+      <a class="partner b" href="tel:+989372418063">
+        <span class="role">شریک</span>
+        <span class="name">فرشاد</span>
+        <span class="tel">0937&nbsp;241&nbsp;8063</span>
+      </a>
+    </div>
+
+    <div class="wa-row">
+      <a class="btn" href="https://wa.me/989123990558">واتساپ رضا</a>
+      <a class="btn-ghost" href="https://wa.me/989372418063">واتساپ فرشاد</a>
+    </div>
+
+    <div class="addr">
+      <strong>آدرس کارگاه</strong>
+      تهران، تهرانسر، بلوار یاس — داخل کارواش یاس · تابلو: جلوبندی‌سازی غرب تکنیک
     </div>
   </section>
 </main>
-<footer class="wrap foot">غرب تکنیک · جلوبندی‌سازی تهرانسر</footer>
+
+<footer class="wrap foot">غرب تکنیک · جلوبندی‌سازی تهرانسر · رضا و فرشاد</footer>
+</div>
+
+<script>
+(function(){
+  var c=document.getElementById('stars');
+  if(!c)return;
+  var ctx=c.getContext('2d');
+  if(!ctx)return;
+  var stars=[], raf=0, reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resize(){
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    var w=c.clientWidth,h=c.clientHeight;
+    c.width=Math.floor(w*dpr);c.height=Math.floor(h*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  function seed(){
+    stars=[];
+    for(var i=0;i<120;i++){
+      stars.push({x:Math.random(),y:Math.random(),r:Math.random()*1.15+.2,a:Math.random()*.65+.15,s:Math.random()*.4+.05});
+    }
+  }
+  function draw(t){
+    var w=c.clientWidth,h=c.clientHeight;
+    ctx.clearRect(0,0,w,h);
+    for(var i=0;i<stars.length;i++){
+      var s=stars[i];
+      var tw=reduce?1:(.55+Math.sin(t*0.001*s.s+s.x*20)*.45);
+      ctx.fillStyle='rgba(232,238,246,'+(s.a*tw)+')';
+      ctx.beginPath();
+      ctx.arc(s.x*w,s.y*h,s.r,0,Math.PI*2);
+      ctx.fill();
+    }
+    if(!reduce)raf=requestAnimationFrame(draw);
+  }
+  function boot(){
+    resize();seed();
+    if(reduce)draw(0);else raf=requestAnimationFrame(draw);
+  }
+  boot();
+  window.addEventListener('resize',function(){resize();});
+})();
+</script>
 </body>
 </html>
